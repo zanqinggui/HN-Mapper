@@ -45,6 +45,18 @@ const T = {
     copied: "已复制",
     useFilter: "符合",
     ignoreFilter: "无视",
+    relaxTitle: "解锁建议",
+    relaxSummary: (target, count) => `当前无${target}结果。下面列出忽略 1-3 个条件即可解锁结果的全部 ${count} 组方案，按优先级排序。`,
+    relaxHits: (n) => `预计得到 ${n} 条结果`,
+    relaxApply: "应用建议",
+    relaxIgnore: "忽略",
+    relaxReason: "优先原因",
+    relaxGroupTitle: (n, count) => `忽略 ${n} 个条件 · ${count} 组方案`,
+    relaxPage: (page, total) => `第 ${page} / ${total} 页`,
+    relaxPrev: "上一页",
+    relaxNext: "下一页",
+    targetCn: "中国型号",
+    targetRu: "俄罗斯型号",
   },
   en: {
     title: "CN–RU Wireline Cable Mapper",
@@ -83,6 +95,18 @@ const T = {
     copied: "Copied",
     useFilter: "Use",
     ignoreFilter: "Ignore",
+    relaxTitle: "Unlock Suggestions",
+    relaxSummary: (target, count) => `No ${target} yet. Listed below are all ${count} workable plans that unlock results by ignoring 1-3 filters, ordered by priority.`,
+    relaxHits: (n) => `${n} result(s) expected`,
+    relaxApply: "Apply",
+    relaxIgnore: "Ignore",
+    relaxReason: "Why this is prioritized",
+    relaxGroupTitle: (n, count) => `Ignore ${n} filter(s) · ${count} plan(s)`,
+    relaxPage: (page, total) => `Page ${page} / ${total}`,
+    relaxPrev: "Prev",
+    relaxNext: "Next",
+    targetCn: "Chinese models",
+    targetRu: "Russian models",
   },
   ru: {
     title: "Маппер кабелей КНР–РФ",
@@ -121,6 +145,18 @@ const T = {
     copied: "Скопировано",
     useFilter: "Учитывать",
     ignoreFilter: "Игнор",
+    relaxTitle: "Подсказки разблокировки",
+    relaxSummary: (target, count) => `Пока нет результатов ${target}. Ниже перечислены все ${count} рабочие варианты, которые дают результат при игнорировании 1-3 полей, в порядке приоритета.`,
+    relaxHits: (n) => `Ожидается ${n} результат(ов)`,
+    relaxApply: "Применить",
+    relaxIgnore: "Игнорировать",
+    relaxReason: "Почему это в приоритете",
+    relaxGroupTitle: (n, count) => `Игнорировать ${n} поле(й) · ${count} вариант(ов)`,
+    relaxPage: (page, total) => `Стр. ${page} / ${total}`,
+    relaxPrev: "Назад",
+    relaxNext: "Вперёд",
+    targetCn: "КНР",
+    targetRu: "РФ",
   },
 };
 
@@ -842,6 +878,155 @@ const summarizeMatchMode = (metaMap, lang) => {
   };
 };
 
+const chooseFieldCombinations = (items, size) => {
+  const result = [];
+  const path = [];
+
+  const walk = (start) => {
+    if (path.length === size) {
+      result.push([...path]);
+      return;
+    }
+    for (let i = start; i <= items.length - (size - path.length); i += 1) {
+      path.push(items[i]);
+      walk(i + 1);
+      path.pop();
+    }
+  };
+
+  walk(0);
+  return result;
+};
+
+const ignoreFieldPenalty = (sid, meta = {}) => {
+  let score = 70;
+  if (meta.source === "inferred") score = 20;
+  else if (meta.source === "parsed") score = 55;
+  else if (meta.source === "direct") score = 90;
+  else if (meta.source === "manual") score = 130;
+
+  if (Number.isFinite(meta.confidenceRate)) score += Math.round(meta.confidenceRate / 8);
+  if (["S1", "S2", "S3"].includes(sid)) score += 40;
+  if (["S23", "S7", "S26"].includes(sid)) score -= 10;
+  return score;
+};
+
+const describeIgnoreFieldReason = (sid, meta = {}, lang) => {
+  const fieldName = sLabel(S_SCHEMA[sid], lang);
+  const confidence = Number.isFinite(meta.confidenceRate) ? `${meta.confidenceRate}%` : null;
+
+  if (meta.source === "inferred") {
+    if (confidence) {
+      return textByLang(lang, {
+        cn: `${sid} ${fieldName} 为推理字段，当前置信率 ${confidence}，比显式字段更适合先放宽。`,
+        en: `${sid} ${fieldName} is inferred with ${confidence} confidence, so it is safer to relax before explicit fields.`,
+        ru: `${sid} ${fieldName} выведено с уверенностью ${confidence}, поэтому его разумнее ослаблять раньше явных полей.`,
+      });
+    }
+    return textByLang(lang, {
+      cn: `${sid} ${fieldName} 为推理字段，通常比显式解析字段更适合优先忽略。`,
+      en: `${sid} ${fieldName} is inferred, so it is usually a better relaxation candidate than explicit parsed fields.`,
+      ru: `${sid} ${fieldName} является выводным полем, поэтому обычно его лучше ослаблять раньше явно распознанных полей.`,
+    });
+  }
+
+  if (["S23", "S7", "S26"].includes(sid)) {
+    return textByLang(lang, {
+      cn: `${sid} ${fieldName} 属于附加/特性字段，限制较细，先放宽的代价更低。`,
+      en: `${sid} ${fieldName} is an auxiliary/special field, so relaxing it usually costs less than loosening core structure fields.`,
+      ru: `${sid} ${fieldName} относится к дополнительным/специальным полям, поэтому его ослабление обычно дешевле, чем ослабление базовой структуры.`,
+    });
+  }
+
+  if (["S1", "S2", "S3"].includes(sid)) {
+    return textByLang(lang, {
+      cn: `${sid} ${fieldName} 是核心结构字段，本应尽量保留；出现在建议中说明它已经成为当前主要阻塞项。`,
+      en: `${sid} ${fieldName} is a core structural field and should normally be kept; its appearance here means it is a major blocker right now.`,
+      ru: `${sid} ${fieldName} является базовым структурным полем и обычно должно сохраняться; если оно попало в совет, значит сейчас это главный блокирующий фактор.`,
+    });
+  }
+
+  if (meta.source === "manual") {
+    return textByLang(lang, {
+      cn: `${sid} ${fieldName} 来自人工录入，约束最强；只有在更低代价字段不足以解锁结果时才会排到前面。`,
+      en: `${sid} ${fieldName} was entered manually and is treated as a strong constraint; it only rises when cheaper relaxations cannot unlock results.`,
+      ru: `${sid} ${fieldName} введено вручную и считается сильным ограничением; оно поднимается в списке только когда более дешёвые ослабления не дают результат.`,
+    });
+  }
+
+  if (meta.source === "direct") {
+    return textByLang(lang, {
+      cn: `${sid} ${fieldName} 来自产品原始数据，通常不会优先忽略；这次说明它对无结果影响很大。`,
+      en: `${sid} ${fieldName} comes from direct product data and is not usually relaxed first; here it means this field is strongly blocking matches.`,
+      ru: `${sid} ${fieldName} взято напрямую из данных продукта и обычно не ослабляется первым; здесь это означает, что поле сильно блокирует совпадения.`,
+    });
+  }
+
+  if (meta.source === "parsed") {
+    return textByLang(lang, {
+      cn: `${sid} ${fieldName} 由型号名直接解析得到，约束强于推理字段，但弱于人工固定条件。`,
+      en: `${sid} ${fieldName} is parsed directly from the model name, so it is stronger than inferred fields but still softer than manual fixed constraints.`,
+      ru: `${sid} ${fieldName} распознано прямо из марки, поэтому это более жёсткое условие, чем выводные поля, но мягче ручной фиксации.`,
+    });
+  }
+
+  return textByLang(lang, {
+    cn: `${sid} ${fieldName} 当前是主要阻塞条件之一，放宽后能立即解锁结果。`,
+    en: `${sid} ${fieldName} is currently one of the main blockers, and relaxing it unlocks results immediately.`,
+    ru: `${sid} ${fieldName} сейчас является одним из главных блокеров, и его ослабление сразу открывает результаты.`,
+  });
+};
+
+const summarizeRelaxationReason = (ignoreFields, filterMeta, lang) => (
+  ignoreFields.map(sid => describeIgnoreFieldReason(sid, filterMeta[sid], lang)).join(" ")
+);
+
+const buildRelaxationSuggestions = ({
+  filters,
+  filterMeta,
+  targetProducts,
+  lang,
+}) => {
+  const activeKeys = Object.keys(filters).filter(key => filters[key] !== null && filters[key] !== undefined && filters[key] !== "");
+  if (activeKeys.length === 0) return [];
+  const maxIgnoreCount = Math.min(3, activeKeys.length - 1);
+  if (maxIgnoreCount <= 0) return [];
+
+  const suggestions = [];
+
+  for (let ignoreCount = 1; ignoreCount <= maxIgnoreCount; ignoreCount += 1) {
+    const combinations = chooseFieldCombinations(activeKeys, ignoreCount);
+    combinations.forEach(ignoreFields => {
+      const ignoreSet = new Set(ignoreFields);
+      const relaxedFilters = Object.fromEntries(
+        Object.entries(filters).filter(([key]) => !ignoreSet.has(key))
+      );
+      const matched = targetProducts.filter(product => matchesFilter(product, relaxedFilters));
+      if (matched.length === 0) return;
+
+      const score = ignoreFields.reduce(
+        (sum, sid) => sum + ignoreFieldPenalty(sid, filterMeta[sid]),
+        0
+      );
+
+      suggestions.push({
+        ignoreFields,
+        ignoreCount,
+        hitCount: matched.length,
+        score,
+        reason: summarizeRelaxationReason(ignoreFields, filterMeta, lang),
+      });
+    });
+  }
+
+  return suggestions.sort((a, b) => (
+    a.ignoreCount - b.ignoreCount
+    || a.score - b.score
+    || a.hitCount - b.hitCount
+    || a.ignoreFields.join("|").localeCompare(b.ignoreFields.join("|"))
+  ));
+};
+
 // ============================================================
 // 配色常量
 // ============================================================
@@ -863,6 +1048,24 @@ const C = {
   tabInactive: "#161b22",
 };
 
+const formatCnCardDetail = (product) => (
+  [
+    product?.S15 !== null && product?.S15 !== undefined ? `${product.S15}°C` : null,
+    product?.S16 !== null && product?.S16 !== undefined ? `${product.S16}kN` : null,
+    product?.S12 !== null && product?.S12 !== undefined ? `⌀${product.S12}mm` : null,
+  ].filter(Boolean).join(" ") || "—"
+);
+
+const formatRuCardDetail = (product) => (
+  [
+    product?.S12 !== null && product?.S12 !== undefined ? `⌀${product.S12}mm` : null,
+    product?.S14 !== null && product?.S14 !== undefined ? `${product.S14}kg/km` : null,
+  ].filter(Boolean).join(" ") || "—"
+);
+
+const RELAXATION_PAGE_SIZE = 5;
+const RIGHT_PANEL_HEIGHT = "calc(100vh - 220px)";
+
 export default function CableMapper() {
   const [mode, setMode] = useState("cn2ru");
   const [cnInput, setCnInput] = useState("");
@@ -872,6 +1075,7 @@ export default function CableMapper() {
   const [demandList, setDemandList] = useState([]);
   const [demandOpen, setDemandOpen] = useState(false);
   const [lang, setLang] = useState("cn");
+  const [relaxationPage, setRelaxationPage] = useState(0);
 
   const inputText = mode === "cn2ru" ? cnInput : ruInput;
   const setInputText = mode === "cn2ru" ? setCnInput : setRuInput;
@@ -939,6 +1143,55 @@ export default function CableMapper() {
     return { cn: matched.filter(p => p.cn), ru: matched.filter(p => p.ru), all: matched };
   }, [activeFilters]);
 
+  const primaryResultKey = mode === "cn2ru" ? "ru" : mode === "ru2cn" ? "cn" : null;
+  const targetProducts = useMemo(() => {
+    if (primaryResultKey === "ru") return PRODUCTS.filter(product => product.ru);
+    if (primaryResultKey === "cn") return PRODUCTS.filter(product => product.cn);
+    return [];
+  }, [primaryResultKey]);
+
+  const primaryResults = primaryResultKey === "ru" ? results.ru : primaryResultKey === "cn" ? results.cn : [];
+
+  const relaxationSuggestions = useMemo(() => {
+    if (mode === "manual" || !primaryResultKey) return [];
+    if (primaryResults.length > 0) return [];
+    if (Object.keys(activeFilters).length < 1) return [];
+    return buildRelaxationSuggestions({
+      filters: activeFilters,
+      filterMeta: activeFilterMeta,
+      targetProducts,
+      lang,
+    });
+  }, [activeFilterMeta, activeFilters, lang, mode, primaryResultKey, primaryResults.length, targetProducts]);
+
+  const relaxationSuggestionGroups = useMemo(() => {
+    const grouped = new Map();
+    const pageStart = relaxationPage * RELAXATION_PAGE_SIZE;
+    const pageItems = relaxationSuggestions.slice(pageStart, pageStart + RELAXATION_PAGE_SIZE);
+    pageItems.forEach(suggestion => {
+      if (!grouped.has(suggestion.ignoreCount)) grouped.set(suggestion.ignoreCount, []);
+      grouped.get(suggestion.ignoreCount).push(suggestion);
+    });
+    return [...grouped.entries()]
+      .sort((a, b) => a[0] - b[0])
+      .map(([ignoreCount, suggestions]) => ({ ignoreCount, suggestions }));
+  }, [relaxationPage, relaxationSuggestions]);
+
+  const relaxationPageCount = useMemo(
+    () => Math.max(1, Math.ceil(relaxationSuggestions.length / RELAXATION_PAGE_SIZE)),
+    [relaxationSuggestions.length]
+  );
+
+  useEffect(() => {
+    setRelaxationPage(0);
+  }, [mode, cnInput, ruInput, activeFilters, primaryResultKey]);
+
+  useEffect(() => {
+    if (relaxationPage >= relaxationPageCount) {
+      setRelaxationPage(Math.max(0, relaxationPageCount - 1));
+    }
+  }, [relaxationPage, relaxationPageCount]);
+
   const handleManualChange = (field, value) => {
     setManualFilters(prev => {
       const next = { ...prev };
@@ -954,6 +1207,17 @@ export default function CableMapper() {
       const current = { ...(prev[mode] || {}) };
       if (enabled) delete current[field];
       else current[field] = true;
+      return { ...prev, [mode]: current };
+    });
+  };
+
+  const applyRelaxationSuggestion = (ignoreFields) => {
+    if (mode === "manual") return;
+    setIgnoredParsedFieldsByMode(prev => {
+      const current = { ...(prev[mode] || {}) };
+      ignoreFields.forEach(field => {
+        current[field] = true;
+      });
       return { ...prev, [mode]: current };
     });
   };
@@ -1358,15 +1622,6 @@ export default function CableMapper() {
               })}
             </div>
 
-            {mode !== "manual" && (
-              <button onClick={() => setShowAllS(v => !v)} style={{
-                marginTop: 12, background: "#1a1f2e", color: C.textSec,
-                border: `1px solid ${C.border}`, padding: "6px 14px",
-                fontSize: 12, fontFamily: "inherit", cursor: "pointer",
-              }}>
-                {showAllS ? t.hideEmptyS : t.showAllS(schemaFieldCount)}
-              </button>
-            )}
             {mode === "manual" && (
               <button onClick={() => setManualFilters({})} style={{
                 marginTop: 12, background: "#1a1f2e", color: C.textSec,
@@ -1380,15 +1635,177 @@ export default function CableMapper() {
         </div>
 
         {/* Right panel */}
-        <div style={{ flex: "1 1 440px", minWidth: 380 }}>
+        <div style={{
+          flex: "1 1 440px",
+          minWidth: 380,
+          display: "flex",
+          flexDirection: "column",
+          gap: 14,
+          height: mode === "manual" ? "auto" : RIGHT_PANEL_HEIGHT,
+          minHeight: 0,
+          overflow: "hidden",
+        }}>
           {/* Match panels — answer side first in parse modes */}
-          {(() => {
+          {mode !== "manual" && (() => {
+            const primaryPanel = mode === "cn2ru"
+              ? {
+                label: t.ruHits,
+                color: C.blue,
+                data: results.ru,
+                detail: formatRuCardDetail,
+                nameKey: "ru",
+              }
+              : {
+                label: t.cnHits,
+                color: C.gold,
+                data: results.cn,
+                detail: formatCnCardDetail,
+                nameKey: "cn",
+              };
+
+            return (
+              <div style={{
+                background: C.panel,
+                padding: 20,
+                border: `2px solid ${primaryPanel.color}`,
+                flex: "0 0 auto",
+                minHeight: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: 14,
+              }}>
+                <div style={{
+                  fontSize: 15,
+                  color: primaryPanel.color,
+                  textTransform: "uppercase",
+                  letterSpacing: 1,
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}>
+                  <span>{primaryPanel.label}</span>
+                  <span style={{ color: C.textSec }}>{primaryPanel.data.length} {t.count}</span>
+                </div>
+                {matchMode.kind === "inferred" && (
+                  <div style={{ fontSize: 11, color: C.textMuted, marginTop: -8 }}>
+                    {matchMode.detail}
+                  </div>
+                )}
+
+                <div style={{ display: "flex", flexDirection: "column", gap: 6, maxHeight: 260, overflowY: "auto" }}>
+                  {primaryPanel.data.length === 0 ? (
+                    <div style={{ fontSize: 13, color: C.textMuted, fontStyle: "italic" }}>{t.noMatch}</div>
+                  ) : (
+                    primaryPanel.data.map((p, i) => (
+                      <div key={i}
+                        onMouseEnter={e => handleCardEnter(p, e)}
+                        onMouseMove={handleCardMove}
+                        onMouseLeave={handleCardLeave}
+                        style={{
+                        background: C.card, border: `1px solid #1a2332`,
+                        borderLeft: `4px solid ${primaryPanel.color}`,
+                        padding: "8px 12px", display: "flex",
+                        justifyContent: "space-between", alignItems: "center",
+                        cursor: "default",
+                      }}>
+                        <span style={{ display: "inline-flex", alignItems: "center", minWidth: 0 }}>
+                          <span
+                            onMouseEnter={e => handleCardEnter(p, e)}
+                            onMouseMove={handleCardMove}
+                            onMouseLeave={handleCardLeave}
+                            onClick={(e) => { e.stopPropagation(); handleModelClick(p[primaryPanel.nameKey], p, e); }}
+                            style={{ color: primaryPanel.color, fontSize: 15, fontWeight: 600, cursor: "pointer", textDecoration: "underline dotted", textUnderlineOffset: 3 }}
+                          >{p[primaryPanel.nameKey]}</span>
+                          <CopyModelButton text={p[primaryPanel.nameKey]} lang={lang} onCopied={handleCopyNotice} />
+                        </span>
+                        <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+                          <span style={{ fontSize: 12, color: C.textSec }}>
+                            {primaryPanel.detail(p)}
+                          </span>
+                          <span style={{
+                            padding: "2px 8px",
+                            borderRadius: 999,
+                            fontSize: 10,
+                            fontWeight: 700,
+                            color: matchMode.kind === "inferred" ? "#3fb950" : "#8fb7ff",
+                            background: matchMode.kind === "inferred" ? "#0d2818" : "#13233a",
+                            border: `1px solid ${matchMode.kind === "inferred" ? "#1f6f43" : "#2d5a9a"}`,
+                          }}>
+                            {matchMode.label}
+                          </span>
+                        </span>
+                      </div>
+                    ))
+                  )}
+                </div>
+
+                <div style={{ borderTop: `1px solid ${C.border}`, paddingTop: 14 }}>
+                  <div style={{ fontSize: 13, color: C.textSec, marginBottom: 12, textTransform: "uppercase", letterSpacing: 1 }}>
+                    {t.detailHeader(primaryPanel.data.length)}
+                  </div>
+                  <div style={{ overflowX: "auto", overflowY: "auto", maxHeight: 220 }}>
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
+                      <thead>
+                        <tr style={{ borderBottom: `1px solid ${C.border}` }}>
+                          <th style={{ ...thPad, textAlign: "left", color: C.textSec, fontWeight: 600, whiteSpace: "nowrap" }}>{t.colModel}</th>
+                          <th style={{ ...thPad, textAlign: "center", color: C.textSec, fontWeight: 600 }}>{t.colCore}</th>
+                          <th style={{ ...thPad, textAlign: "center", color: C.textSec, fontWeight: 600 }}>{t.colArea}</th>
+                          <th style={{ ...thPad, textAlign: "center", color: C.textSec, fontWeight: 600 }}>{t.colOD}</th>
+                          <th style={{ ...thPad, textAlign: "center", color: C.textSec, fontWeight: 600 }}>{t.colStrength}</th>
+                          <th style={{ ...thPad, textAlign: "center", color: C.textSec, fontWeight: 600 }}>{t.colTemp}</th>
+                          <th style={{ ...thPad, textAlign: "center", color: C.textSec, fontWeight: 600 }}>{t.colLayers}</th>
+                          <th style={{ ...thPad, textAlign: "left", color: C.textSec, fontWeight: 600 }}>{t.colFeatures}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {primaryPanel.data.slice(0, 30).map((p, i) => (
+                          <tr key={i} style={{
+                            borderBottom: `1px solid ${C.panel}`,
+                            background: i % 2 === 0 ? C.card : C.panel,
+                            lineHeight: 1.6,
+                          }}>
+                            <td style={{
+                              ...thPad, color: primaryPanel.color,
+                              fontWeight: 600, whiteSpace: "nowrap",
+                              borderLeft: `3px solid ${primaryPanel.color}`,
+                            }}>
+                              <span style={{ display: "inline-flex", alignItems: "center" }}>
+                                <span
+                                  onMouseEnter={e => handleCardEnter(p, e)}
+                                  onMouseMove={handleCardMove}
+                                  onMouseLeave={handleCardLeave}
+                                  style={{ cursor: "pointer", textDecoration: "underline dotted", textUnderlineOffset: 3 }}
+                                >{p[primaryPanel.nameKey]}</span>
+                                <CopyModelButton text={p[primaryPanel.nameKey]} lang={lang} onCopied={handleCopyNotice} />
+                              </span>
+                            </td>
+                            <td style={{ ...thPad, textAlign: "center", color: C.text }}>{p.S2}</td>
+                            <td style={{ ...thPad, textAlign: "center", color: C.text }}>{p.S3}</td>
+                            <td style={{ ...thPad, textAlign: "center", color: C.text }}>{p.S12 ?? "—"}</td>
+                            <td style={{ ...thPad, textAlign: "center", color: C.text }}>{p.S16 ?? "—"}</td>
+                            <td style={{ ...thPad, textAlign: "center", color: C.text }}>{p.S15 ?? "—"}</td>
+                            <td style={{ ...thPad, textAlign: "center", color: C.text }}>{p.S10 ?? "—"}</td>
+                            <td style={{ ...thPad, color: C.textSec }}>{p.S23 || "—"}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    {primaryPanel.data.length > 30 && (
+                      <div style={{ fontSize: 12, color: C.textMuted, padding: "8px", textAlign: "center" }}>
+                        {t.truncated(primaryPanel.data.length - 30)}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+          {mode === "manual" && (() => {
             const panels = [
               { key: "cn", label: t.cnHits, color: C.gold, data: results.cn,
-                detail: p => `${p.S15 ? `${p.S15}°C` : ""} ${p.S16 ? `${p.S16}kN` : ""} ⌀${p.S12}mm`,
+                detail: formatCnCardDetail,
                 nameKey: "cn" },
               { key: "ru", label: t.ruHits, color: C.blue, data: results.ru,
-                detail: p => `⌀${p.S12}mm ${p.S14 ? `${p.S14}kg/km` : ""}`,
+                detail: formatRuCardDetail,
                 nameKey: "ru" },
             ];
             if (mode === "cn2ru") panels.reverse();
@@ -1400,9 +1817,10 @@ export default function CableMapper() {
               if (mode !== "manual" && !isPrimary) return null;
               return (
                 <div key={panel.key} style={{
-                  background: C.panel, padding: 20, marginBottom: 14,
+                  background: C.panel, padding: 20,
                   border: isPrimary ? `2px solid ${panel.color}` : `1px solid ${C.border}`,
                   opacity: mode !== "manual" && !isPrimary ? 0.7 : 1,
+                  flex: "0 0 auto",
                 }}>
                   <div style={{
                     fontSize: isPrimary ? 15 : 13, color: panel.color, marginBottom: 12,
@@ -1466,12 +1884,18 @@ export default function CableMapper() {
           })()}
 
           {/* Detail table — parse modes only, answer side only */}
-          {mode !== "manual" && (() => {
+          {false && (() => {
             const detailData = mode === "cn2ru" ? results.ru : results.cn;
             const detailColor = mode === "cn2ru" ? C.blue : C.gold;
             const detailNameKey = mode === "cn2ru" ? "ru" : "cn";
             return (
-              <div style={{ background: C.panel, border: `1px solid ${C.border}`, padding: 20 }}>
+              <div style={{
+                background: C.panel,
+                border: `1px solid ${C.border}`,
+                padding: 20,
+                flex: "0 0 auto",
+                minHeight: 0,
+              }}>
               <div style={{ fontSize: 13, color: C.textSec, marginBottom: 12, textTransform: "uppercase", letterSpacing: 1 }}>
                 {t.detailHeader(detailData.length)}
               </div>
@@ -1480,7 +1904,7 @@ export default function CableMapper() {
                   {matchMode.detail}
                 </div>
               )}
-              <div style={{ overflowX: "auto" }}>
+              <div style={{ overflowX: "auto", overflowY: "auto", maxHeight: 220 }}>
                   <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12 }}>
                     <thead>
                       <tr style={{ borderBottom: `1px solid ${C.border}` }}>
@@ -1532,43 +1956,137 @@ export default function CableMapper() {
             );
           })()}
 
-          {/* Gap analysis */}
-          {hitCount > 0 && (
-            <div style={{ background: C.panel, border: `1px solid ${C.border}`, padding: 20, marginTop: 14 }}>
-              <div style={{ fontSize: 13, color: C.textSec, marginBottom: 10, textTransform: "uppercase", letterSpacing: 1 }}>
-                {t.gapTitle}
-              </div>
-              <div style={{ fontSize: 13, lineHeight: 1.8 }}>
-                {K_NAME_FIELDS.filter(f => !activeFilters[f] && activeFilters[f] !== 0).length > 0 && (
-                  <div>
-                    <span style={{ color: C.gold }}>{t.cnName}</span>
-                    <span style={{ color: C.textSec }}> {t.missing} </span>
-                    {K_NAME_FIELDS.filter(f => !activeFilters[f] && activeFilters[f] !== 0).map(f => (
-                      <span key={f} style={{
-                        background: C.goldBg, color: C.gold,
-                        padding: "2px 6px", marginRight: 4, fontSize: 11,
-                      }}>{f} {sLabel(S_SCHEMA[f], lang)}</span>
-                    ))}
-                  </div>
-                )}
-                {R_NAME_FIELDS.filter(f => !activeFilters[f] && activeFilters[f] !== 0).length > 0 && (
-                  <div style={{ marginTop: 6 }}>
-                    <span style={{ color: C.blue }}>{t.ruName}</span>
-                    <span style={{ color: C.textSec }}> {t.missing} </span>
-                    {R_NAME_FIELDS.filter(f => !activeFilters[f] && activeFilters[f] !== 0).map(f => (
-                      <span key={f} style={{
-                        background: C.blueBg, color: C.blue,
-                        padding: "2px 6px", marginRight: 4, fontSize: 11,
-                      }}>{f} {sLabel(S_SCHEMA[f], lang)}</span>
-                    ))}
-                  </div>
-                )}
-                <div style={{ marginTop: 10, fontSize: 12, color: C.textMuted }}>
-                  {t.footerHint}
+          {mode !== "manual" && relaxationSuggestions.length > 0 && (
+            <div style={{
+              background: C.panel,
+              border: `1px solid ${C.border}`,
+              padding: 20,
+              display: "flex",
+              flexDirection: "column",
+              flex: "1 1 0",
+              minHeight: 0,
+              overflow: "hidden",
+            }}>
+              <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center", marginBottom: 8 }}>
+                <div style={{ fontSize: 13, color: C.textSec, textTransform: "uppercase", letterSpacing: 1 }}>
+                  {t.relaxTitle}
                 </div>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+                  <button
+                    onClick={() => setRelaxationPage(page => Math.max(0, page - 1))}
+                    disabled={relaxationPage === 0}
+                    style={{
+                      padding: "4px 10px",
+                      borderRadius: 6,
+                      border: `1px solid ${relaxationPage === 0 ? C.border : C.borderActive}`,
+                      background: relaxationPage === 0 ? C.tabInactive : C.tabActive,
+                      color: relaxationPage === 0 ? C.textMuted : C.blue,
+                      cursor: relaxationPage === 0 ? "default" : "pointer",
+                      fontFamily: "inherit",
+                      fontSize: 12,
+                    }}
+                  >
+                    ← {t.relaxPrev}
+                  </button>
+                  <span style={{ fontSize: 12, color: C.textSec, minWidth: 72, textAlign: "center" }}>
+                    {t.relaxPage(relaxationPage + 1, relaxationPageCount)}
+                  </span>
+                  <button
+                    onClick={() => setRelaxationPage(page => Math.min(relaxationPageCount - 1, page + 1))}
+                    disabled={relaxationPage >= relaxationPageCount - 1}
+                    style={{
+                      padding: "4px 10px",
+                      borderRadius: 6,
+                      border: `1px solid ${relaxationPage >= relaxationPageCount - 1 ? C.border : C.borderActive}`,
+                      background: relaxationPage >= relaxationPageCount - 1 ? C.tabInactive : C.tabActive,
+                      color: relaxationPage >= relaxationPageCount - 1 ? C.textMuted : C.blue,
+                      cursor: relaxationPage >= relaxationPageCount - 1 ? "default" : "pointer",
+                      fontFamily: "inherit",
+                      fontSize: 12,
+                    }}
+                  >
+                    {t.relaxNext} →
+                  </button>
+                </div>
+              </div>
+              <div style={{ fontSize: 12, color: C.textMuted, marginBottom: 12 }}>
+                {t.relaxSummary(
+                  primaryResultKey === "cn" ? t.targetCn : t.targetRu,
+                  relaxationSuggestions.length
+                )}
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10, flex: "1 1 auto", minHeight: 0, overflowY: "auto", paddingRight: 4 }}>
+                {relaxationSuggestionGroups.map(group => (
+                  <div key={group.ignoreCount} style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                    <div style={{ fontSize: 12, color: C.textSec, letterSpacing: 0.5 }}>
+                      {t.relaxGroupTitle(group.ignoreCount, group.suggestions.length)}
+                    </div>
+                    {group.suggestions.map((suggestion, idx) => (
+                      <div key={`${group.ignoreCount}-${idx}-${suggestion.ignoreFields.join("-")}`} style={{
+                        background: C.card,
+                        border: `1px solid ${C.border}`,
+                        padding: 12,
+                      }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center" }}>
+                          <div style={{ minWidth: 0 }}>
+                            <div style={{ fontSize: 12, color: C.textSec, marginBottom: 6 }}>
+                              {t.relaxIgnore}
+                            </div>
+                            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                              {suggestion.ignoreFields.map(sid => {
+                                const meta = activeFilterMeta[sid];
+                                return (
+                                  <span key={sid} style={{
+                                    display: "inline-flex",
+                                    gap: 4,
+                                    alignItems: "center",
+                                    background: "#13233a",
+                                    color: "#79c0ff",
+                                    padding: "3px 8px",
+                                    borderRadius: 999,
+                                    fontSize: 11,
+                                  }}>
+                                    <span>{sid}</span>
+                                    <span>{sLabel(S_SCHEMA[sid], lang)}</span>
+                                    {meta?.source && <span>{sourceLabel(meta.source, lang)}</span>}
+                                    {confidenceLabel(meta, lang, true) && <span>{confidenceLabel(meta, lang, true)}</span>}
+                                  </span>
+                                );
+                              })}
+                            </div>
+                          </div>
+                          <button
+                            onClick={() => applyRelaxationSuggestion(suggestion.ignoreFields)}
+                            style={{
+                              padding: "6px 12px",
+                              borderRadius: 6,
+                              border: `1px solid ${C.borderActive}`,
+                              background: C.tabActive,
+                              color: C.blue,
+                              cursor: "pointer",
+                              fontFamily: "inherit",
+                              fontSize: 12,
+                              flex: "0 0 auto",
+                            }}
+                          >
+                            {t.relaxApply}
+                          </button>
+                        </div>
+                        <div style={{ marginTop: 8, fontSize: 12, color: C.textMuted }}>
+                          {t.relaxHits(suggestion.hitCount)}
+                        </div>
+                        <div style={{ marginTop: 8, fontSize: 12, color: C.textSec, lineHeight: 1.6 }}>
+                          <span style={{ color: C.gold }}>{t.relaxReason}</span>
+                          <span style={{ color: C.textMuted }}> {suggestion.reason}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
           )}
+
         </div>
       </div>
 
