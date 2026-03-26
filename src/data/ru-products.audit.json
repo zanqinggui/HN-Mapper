@@ -3,7 +3,7 @@
     "existing_count": 37,
     "missing_count": 104,
     "staging_count": 141,
-    "missing_source": "C:\\Users\\G3187\\PycharmProjects\\HN-Mapper\\scripts\\data\\ru_missing_partial.fixed.json"
+    "missing_source": "scripts/data/ru_missing_partial.fixed.json"
   },
   "overlap": [],
   "duplicate_missing": [],

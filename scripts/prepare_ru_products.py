@@ -39,6 +39,10 @@ def dump_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def repo_relative(path: Path) -> str:
+    return path.relative_to(BASE).as_posix()
+
+
 def parse_russian_name(model: str) -> dict[str, Any]:
     s: dict[str, Any] = {}
     raw = model.strip()
@@ -196,7 +200,7 @@ def main() -> None:
             "existing_count": len(existing),
             "missing_count": len(missing),
             "staging_count": len(staging),
-            "missing_source": str(missing_source),
+            "missing_source": repo_relative(missing_source),
         },
         "overlap": overlap,
         "duplicate_missing": duplicate_missing,
