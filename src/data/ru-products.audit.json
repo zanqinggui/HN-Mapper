@@ -1,0 +1,377 @@
+{
+  "inputs": {
+    "existing_count": 37,
+    "missing_count": 104,
+    "staging_count": 141,
+    "missing_source": "C:\\Users\\G3187\\PycharmProjects\\HN-Mapper\\ru_missing_partial.fixed.json"
+  },
+  "overlap": [],
+  "duplicate_missing": [],
+  "coverage": {
+    "existing": {
+      "S1": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S2": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S3": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S4": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S5": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S6": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S7": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S8": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S9": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S10": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S11": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S12": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S13": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S14": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S15": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S16": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S17": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S18": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S19": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S20": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S21": {
+        "nonempty": 37,
+        "total": 37
+      },
+      "S22": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S23": {
+        "nonempty": 10,
+        "total": 37
+      },
+      "S24": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S25": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S26": {
+        "nonempty": 0,
+        "total": 37
+      },
+      "S27": {
+        "nonempty": 37,
+        "total": 37
+      }
+    },
+    "missing": {
+      "S1": {
+        "nonempty": 104,
+        "total": 104
+      },
+      "S2": {
+        "nonempty": 84,
+        "total": 104
+      },
+      "S3": {
+        "nonempty": 84,
+        "total": 104
+      },
+      "S4": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S5": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S6": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S7": {
+        "nonempty": 99,
+        "total": 104
+      },
+      "S8": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S9": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S10": {
+        "nonempty": 72,
+        "total": 104
+      },
+      "S11": {
+        "nonempty": 86,
+        "total": 104
+      },
+      "S12": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S13": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S14": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S15": {
+        "nonempty": 78,
+        "total": 104
+      },
+      "S16": {
+        "nonempty": 72,
+        "total": 104
+      },
+      "S17": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S18": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S19": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S20": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S21": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S22": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S23": {
+        "nonempty": 30,
+        "total": 104
+      },
+      "S24": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S25": {
+        "nonempty": 0,
+        "total": 104
+      },
+      "S26": {
+        "nonempty": 6,
+        "total": 104
+      },
+      "S27": {
+        "nonempty": 72,
+        "total": 104
+      }
+    },
+    "staging": {
+      "S1": {
+        "nonempty": 141,
+        "total": 141
+      },
+      "S2": {
+        "nonempty": 121,
+        "total": 141
+      },
+      "S3": {
+        "nonempty": 121,
+        "total": 141
+      },
+      "S4": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S5": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S6": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S7": {
+        "nonempty": 136,
+        "total": 141
+      },
+      "S8": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S9": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S10": {
+        "nonempty": 109,
+        "total": 141
+      },
+      "S11": {
+        "nonempty": 123,
+        "total": 141
+      },
+      "S12": {
+        "nonempty": 37,
+        "total": 141
+      },
+      "S13": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S14": {
+        "nonempty": 37,
+        "total": 141
+      },
+      "S15": {
+        "nonempty": 115,
+        "total": 141
+      },
+      "S16": {
+        "nonempty": 109,
+        "total": 141
+      },
+      "S17": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S18": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S19": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S20": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S21": {
+        "nonempty": 37,
+        "total": 141
+      },
+      "S22": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S23": {
+        "nonempty": 40,
+        "total": 141
+      },
+      "S24": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S25": {
+        "nonempty": 0,
+        "total": 141
+      },
+      "S26": {
+        "nonempty": 6,
+        "total": 141
+      },
+      "S27": {
+        "nonempty": 109,
+        "total": 141
+      }
+    }
+  },
+  "known_review_items": [
+    {
+      "ru": "КГ 1х0,5-5-90 Оа",
+      "status": "already_aligned",
+      "note": "S10 is already 2 in the current ru-products.json; no further direct edit was needed in this pass.",
+      "current": {
+        "S8": null,
+        "S9": null,
+        "S10": 2,
+        "S11": "碳钢",
+        "S12": 5.2,
+        "S14": 45.3,
+        "S15": 90,
+        "S16": 5,
+        "S27": [
+          {
+            "index": 1,
+            "kind": "armor",
+            "structure": null,
+            "material": "碳钢",
+            "note": "projected from legacy S10/S11 fields"
+          },
+          {
+            "index": 2,
+            "kind": "armor",
+            "structure": null,
+            "material": "碳钢",
+            "note": "projected from legacy S10/S11 fields"
+          }
+        ]
+      }
+    }
+  ],
+  "existing_name_mismatch": [],
+  "missing_name_mismatch": []
+}

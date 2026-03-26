@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.venv/
+.idea/
+.claude/
+
+cn_cable_data/
+*.xlsx
+*.xls
+俄罗斯电缆材料.pdf
+
+*.pyc
+.DS_Store
+Thumbs.db

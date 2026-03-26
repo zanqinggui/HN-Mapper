@@ -1,0 +1,7506 @@
+[
+  {
+    "cn": "W3B-JY-14.7",
+    "S1": "普通",
+    "S2": 3,
+    "S3": 0.75,
+    "S4": null,
+    "S5": "B",
+    "S6": null,
+    "S7": "无",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 14.7,
+    "S13": null,
+    "S14": 416,
+    "S15": 90,
+    "S16": 55,
+    "S17": 735,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": 24.5,
+    "S22": null,
+    "S23": "JY",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 588–882 mm",
+        "rangeMin": 588,
+        "rangeMax": 882
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W3BP-8.4",
+    "S1": "普通",
+    "S2": 3,
+    "S3": 0.75,
+    "S4": null,
+    "S5": "B",
+    "S6": null,
+    "S7": "P",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 8.4,
+    "S13": null,
+    "S14": null,
+    "S15": 90,
+    "S16": null,
+    "S17": 420,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 336–504 mm",
+        "rangeMin": 336,
+        "rangeMax": 504
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46PP-11",
+    "S1": "普通",
+    "S2": 7,
+    "S3": 0.5,
+    "S4": null,
+    "S5": "F46",
+    "S6": null,
+    "S7": "PP",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 11,
+    "S13": null,
+    "S14": null,
+    "S15": 230,
+    "S16": null,
+    "S17": 550,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 440–660 mm",
+        "rangeMin": 440,
+        "rangeMax": 660
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-6.25",
+    "S1": "普通",
+    "S2": 1,
+    "S3": 0.75,
+    "S4": null,
+    "S5": "B",
+    "S6": null,
+    "S7": "无",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 6.25,
+    "S13": null,
+    "S14": null,
+    "S15": 90,
+    "S16": null,
+    "S17": 312.5,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 250–375 mm",
+        "rangeMin": 250,
+        "rangeMax": 375
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W3F40-10.25",
+    "S1": "普通",
+    "S2": 3,
+    "S3": 0.5,
+    "S4": null,
+    "S5": "F40",
+    "S6": null,
+    "S7": "无",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 10.25,
+    "S13": null,
+    "S14": null,
+    "S15": 180,
+    "S16": null,
+    "S17": 512.5,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 410–615 mm",
+        "rangeMin": 410,
+        "rangeMax": 615
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WMFGSB-6.25",
+    "S1": "密封",
+    "S2": 1,
+    "S3": 0.75,
+    "S4": null,
+    "S5": "B",
+    "S6": null,
+    "S7": "无",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 6.25,
+    "S13": null,
+    "S14": null,
+    "S15": 90,
+    "S16": null,
+    "S17": 312.5,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "FD",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 250–375 mm",
+        "rangeMin": 250,
+        "rangeMax": 375
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W3B-HS-14.7",
+    "S1": "普通",
+    "S2": 3,
+    "S3": 0.75,
+    "S4": null,
+    "S5": "B",
+    "S6": null,
+    "S7": "无",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "碳钢",
+    "S12": 14.7,
+    "S13": null,
+    "S14": null,
+    "S15": 90,
+    "S16": null,
+    "S17": 735,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "HS",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 588–882 mm",
+        "rangeMin": 588,
+        "rangeMax": 882
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W3BX-14.7",
+    "S1": "普通",
+    "S2": 3,
+    "S3": 0.75,
+    "S4": null,
+    "S5": "B",
+    "S6": null,
+    "S7": "无",
+    "S8": null,
+    "S9": null,
+    "S10": 2,
+    "S11": "不锈钢",
+    "S12": 14.7,
+    "S13": null,
+    "S14": null,
+    "S15": 90,
+    "S16": null,
+    "S17": 735,
+    "S18": null,
+    "S19": null,
+    "S20": null,
+    "S21": null,
+    "S22": null,
+    "S23": "X",
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": null,
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": null,
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 588–882 mm",
+        "rangeMin": 588,
+        "rangeMax": 882
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "FL-WGSF46F40-5.6",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "不锈钢",
+    "S4": "19×0.26",
+    "S6": 2.64,
+    "S8": "12×0.79",
+    "S9": "18×0.79",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 148.0,
+    "S15": 260.0,
+    "S16": 22.0,
+    "S18": "3.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 18.0,
+    "S22": 190.0,
+    "S3": 1.009,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.79",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.79",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "FL-WGSF46F40-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "不锈钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 281.0,
+    "S15": 260.0,
+    "S16": 40.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "FL-WGSPFA-5.6",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "PFA",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "不锈钢",
+    "S4": "19×0.26",
+    "S6": 2.64,
+    "S8": "12×0.79",
+    "S9": "18×0.79",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 148.0,
+    "S15": 280.0,
+    "S16": 22.0,
+    "S18": "3.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 18.0,
+    "S22": 190.0,
+    "S3": 1.009,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.79",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.79",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "FLM-WGSF46F40-8.0",
+    "S1": "密封",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "不锈钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 281.0,
+    "S15": 260.0,
+    "S16": 45.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "不锈钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "GX-W1-2B1-2A1a-GB-8.0",
+    "S1": "光缆",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "GB",
+    "S10": 2,
+    "S11": "碳钢",
+    "S8": "18×0.81",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 290.0,
+    "S15": 150.0,
+    "S16": 45.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 18.1,
+    "S3": null,
+    "S4": null,
+    "S6": null,
+    "S17": 400,
+    "S22": null,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "18×0.81",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W4B(4H-185A)-4.7",
+    "S1": "普通",
+    "S2": 4,
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.21",
+    "S6": 1.0,
+    "S8": "18×0.47",
+    "S9": "18×0.64",
+    "S12": 4.7,
+    "S13": "+0.13/-0.05",
+    "S14": 85.0,
+    "S15": 150.0,
+    "S16": 13.0,
+    "S18": "4.78 м/км/5кН",
+    "S19": 200.0,
+    "S20": 15000.0,
+    "S21": 75.0,
+    "S22": 190.0,
+    "S3": 0.242,
+    "S5": null,
+    "S17": 235,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "18×0.47",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.64",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 188–282 mm",
+        "rangeMin": 188,
+        "rangeMax": 282
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W4B-5.6",
+    "S1": "普通",
+    "S2": 4,
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.21",
+    "S6": 1.0,
+    "S8": "12×0.79",
+    "S9": "18×0.79",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 142.0,
+    "S15": 150.0,
+    "S16": 25.0,
+    "S18": "2.5 м/км/5кН",
+    "S19": 200.0,
+    "S20": 15000.0,
+    "S21": 75.0,
+    "S22": 190.0,
+    "S3": 0.242,
+    "S5": null,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.79",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.79",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7B(7H-250A)-6.4",
+    "S1": "普通",
+    "S2": 7,
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.21",
+    "S6": null,
+    "S8": "18×0.63",
+    "S9": "18×0.89",
+    "S12": 6.4,
+    "S13": "+0.13/-0.05",
+    "S14": 160.0,
+    "S15": 150.0,
+    "S16": 25.0,
+    "S18": "2.8 м/км/5кН",
+    "S19": 300.0,
+    "S20": 15000.0,
+    "S21": 84.3,
+    "S22": 140.0,
+    "S3": 0.242,
+    "S5": null,
+    "S17": 320,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "18×0.63",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.89",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 256–384 mm",
+        "rangeMin": 256,
+        "rangeMax": 384
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7BPP-12.04",
+    "S1": "普通",
+    "S2": 7,
+    "S7": "PP",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.33",
+    "S6": 2.14,
+    "S8": "18×1.19",
+    "S9": "18×1.66",
+    "S12": 12.04,
+    "S13": "+0.13/-0.05",
+    "S14": 565.0,
+    "S15": 150.0,
+    "S16": 90.0,
+    "S18": "0.7 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 33.0,
+    "S22": 160.0,
+    "S3": 0.599,
+    "S5": null,
+    "S17": 602,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "18×1.19",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.66",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 481.6–722.4 mm",
+        "rangeMin": 481.6,
+        "rangeMax": 722.4
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7BPP-HS-12.04",
+    "S1": "普通",
+    "S2": 7,
+    "S7": "PP",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.33",
+    "S6": 2.13,
+    "S8": "18×1.19",
+    "S9": "18×1.66",
+    "S12": 12.04,
+    "S13": "+0.13/-0.05",
+    "S14": 550.0,
+    "S15": 150.0,
+    "S16": 109.0,
+    "S18": "0.69 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 33.0,
+    "S22": 160.0,
+    "S3": 0.599,
+    "S5": null,
+    "S17": 602,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "18×1.19",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.66",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 481.6–722.4 mm",
+        "rangeMin": 481.6,
+        "rangeMax": 722.4
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46F40F40-EEHS-12.4",
+    "S1": "普通",
+    "S2": 7,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "EEHS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.36",
+    "S6": 2.48,
+    "S8": "22×1.11",
+    "S9": "22×1.44",
+    "S12": 12.4,
+    "S13": "+0.13/-0.05",
+    "S14": 580.0,
+    "S15": 260.0,
+    "S16": 140.0,
+    "S18": "0.8 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 26.5,
+    "S22": 160.0,
+    "S3": 0.713,
+    "S17": 620,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "22×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "22×1.44",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 496–744 mm",
+        "rangeMin": 496,
+        "rangeMax": 744
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46F40F40-EHS-12.4",
+    "S1": "普通",
+    "S2": 7,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "EHS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.36",
+    "S6": 2.48,
+    "S8": "22×1.11",
+    "S9": "22×1.44",
+    "S12": 12.4,
+    "S13": "+0.13/-0.05",
+    "S14": 580.0,
+    "S15": 260.0,
+    "S16": 125.0,
+    "S18": "0.75 м/км/5кН",
+    "S19": 1000.0,
+    "S20": 15000.0,
+    "S21": 26.5,
+    "S22": 115.0,
+    "S3": 0.713,
+    "S17": 620,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "22×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "22×1.44",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 496–744 mm",
+        "rangeMin": 496,
+        "rangeMax": 744
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46F40P-EEHS-12.4",
+    "S1": "普通",
+    "S2": 7,
+    "S5": "F46/F40",
+    "S7": "P",
+    "S23": "EEHS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.36",
+    "S6": 2.48,
+    "S8": "22×1.11",
+    "S9": "22×1.44",
+    "S12": 12.4,
+    "S13": "+0.13/-0.05",
+    "S14": 580.0,
+    "S15": 260.0,
+    "S16": 140.0,
+    "S18": "0.8 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 26.5,
+    "S22": 160.0,
+    "S3": 0.713,
+    "S17": 620,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "22×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "22×1.44",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 496–744 mm",
+        "rangeMin": 496,
+        "rangeMax": 744
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46F40P-EHS-12.4",
+    "S1": "普通",
+    "S2": 7,
+    "S5": "F46/F40",
+    "S7": "P",
+    "S23": "EHS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.36",
+    "S6": 2.48,
+    "S8": "22×1.11",
+    "S9": "22×1.44",
+    "S12": 12.4,
+    "S13": "+0.13/-0.05",
+    "S14": 580.0,
+    "S15": 260.0,
+    "S16": 125.0,
+    "S18": "0.8 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 26.5,
+    "S22": 160.0,
+    "S3": 0.713,
+    "S17": 620,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "22×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "22×1.44",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 496–744 mm",
+        "rangeMin": 496,
+        "rangeMax": 744
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46F40P-HS-12.04",
+    "S1": "普通",
+    "S2": 7,
+    "S5": "F46/F40",
+    "S7": "P",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.33",
+    "S6": 2.13,
+    "S8": "18×1.19",
+    "S9": "18×1.66",
+    "S12": 12.04,
+    "S13": "+0.13/-0.05",
+    "S14": 580.0,
+    "S15": 260.0,
+    "S16": 109.0,
+    "S18": "0.69 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 33.0,
+    "S22": 160.0,
+    "S3": 0.599,
+    "S17": 602,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "18×1.19",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.66",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 481.6–722.4 mm",
+        "rangeMin": 481.6,
+        "rangeMax": 722.4
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "W7F46PP-HS-12.4",
+    "S1": "普通",
+    "S2": 7,
+    "S5": "F46",
+    "S7": "PP",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.33",
+    "S6": 2.48,
+    "S8": "22×1.11",
+    "S9": "22×1.44",
+    "S12": 12.4,
+    "S13": "+0.13/-0.05",
+    "S14": 580.0,
+    "S15": 232.0,
+    "S16": 110.0,
+    "S18": "0.8 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 33.0,
+    "S22": 130.0,
+    "S3": 0.599,
+    "S17": 620,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "22×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "22×1.44",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 496–744 mm",
+        "rangeMin": 496,
+        "rangeMax": 744
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-2.56",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.21",
+    "S6": 1.24,
+    "S8": "12×0.36",
+    "S9": "18×0.36",
+    "S12": 2.56,
+    "S13": "+0.13/-0.05",
+    "S14": 29.0,
+    "S15": 150.0,
+    "S16": 4.0,
+    "S18": "14.7 м/км/5кН",
+    "S19": 300.0,
+    "S20": 15000.0,
+    "S21": 75.0,
+    "S22": 167.0,
+    "S3": 0.242,
+    "S17": 128,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.36",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.36",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 102.4–153.6 mm",
+        "rangeMin": 102.4,
+        "rangeMax": 153.6
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-3.5",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "7×0.21",
+    "S6": 1.71,
+    "S8": "12×0.47",
+    "S9": "18×0.47",
+    "S12": 3.5,
+    "S13": "+0.13/-0.05",
+    "S14": 45.0,
+    "S15": 150.0,
+    "S16": 8.0,
+    "S18": "7.3 м/км/5кН",
+    "S19": 300.0,
+    "S20": 15000.0,
+    "S21": 75.0,
+    "S22": 140.0,
+    "S3": 0.242,
+    "S17": 175,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.47",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.47",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 140–210 mm",
+        "rangeMin": 140,
+        "rangeMax": 210
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 270.0,
+    "S15": 150.0,
+    "S16": 45.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-HS-5.6",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.30",
+    "S6": 2.15,
+    "S8": "15×0.61",
+    "S9": "15×0.89",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 142.0,
+    "S15": 150.0,
+    "S16": 30.0,
+    "S18": "2.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 13.1,
+    "S22": 220.0,
+    "S3": 1.343,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "15×0.61",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "15×0.89",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-HS-7.32",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.36",
+    "S6": 2.63,
+    "S8": "12×1.01",
+    "S9": "18×1.01",
+    "S12": 7.32,
+    "S13": "+0.13/-0.05",
+    "S14": 234.0,
+    "S15": 150.0,
+    "S16": 45.4,
+    "S18": "1.74 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 220.0,
+    "S3": 1.934,
+    "S17": 366,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.01",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.01",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 292.8–439.2 mm",
+        "rangeMin": 292.8,
+        "rangeMax": 439.2
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSB-HS-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "B",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 270.0,
+    "S15": 150.0,
+    "S16": 55.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSF46F40-6.35",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.30",
+    "S6": 2.31,
+    "S8": "12×0.36",
+    "S9": "18×0.36",
+    "S12": 6.35,
+    "S13": "+0.13/-0.05",
+    "S14": 180.0,
+    "S15": 260.0,
+    "S16": 30.0,
+    "S18": "2.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 13.1,
+    "S22": 167.0,
+    "S3": 1.343,
+    "S17": 317.5,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.36",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.36",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 254–381 mm",
+        "rangeMin": 254,
+        "rangeMax": 381
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSF46F40-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 281.0,
+    "S15": 260.0,
+    "S16": 45.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSF46F40-EEHS-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "EEHS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 281.0,
+    "S15": 260.0,
+    "S16": 70.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSF46F40-HS-5.6",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.30",
+    "S6": 2.76,
+    "S8": "15×0.61",
+    "S9": "15×0.89",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 145.0,
+    "S15": 260.0,
+    "S16": 30.0,
+    "S18": "2.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 13.1,
+    "S22": 220.0,
+    "S3": 1.343,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "15×0.61",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "15×0.89",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSF46F40-HS-7.32",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.36",
+    "S6": 2.63,
+    "S8": "12×1.01",
+    "S9": "18×1.01",
+    "S12": 7.32,
+    "S13": "+0.13/-0.05",
+    "S14": 241.0,
+    "S15": 260.0,
+    "S16": 45.4,
+    "S18": "2.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 220.0,
+    "S3": 1.934,
+    "S17": 366,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.01",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.01",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 292.8–439.2 mm",
+        "rangeMin": 292.8,
+        "rangeMax": 439.2
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSF46F40-HS-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "F46/F40",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "18×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 281.0,
+    "S15": 260.0,
+    "S16": 55.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSPFA-5.6",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "PFA",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.26",
+    "S6": 2.64,
+    "S8": "12×0.79",
+    "S9": "18×0.79",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 148.0,
+    "S15": 280.0,
+    "S16": 25.0,
+    "S18": "2.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 18.0,
+    "S22": 190.0,
+    "S3": 1.009,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×0.79",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "18×0.79",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSPFA-8.0",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "PFA",
+    "S7": "无",
+    "S23": "",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.37",
+    "S6": 3.81,
+    "S8": "12×1.11",
+    "S9": "12×1.11",
+    "S12": 8.0,
+    "S13": "+0.13/-0.05",
+    "S14": 281.0,
+    "S15": 280.0,
+    "S16": 45.0,
+    "S18": "1.35 м/км/5кН",
+    "S19": 1500.0,
+    "S20": 15000.0,
+    "S21": 9.2,
+    "S22": 190.0,
+    "S3": 2.043,
+    "S17": 400,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "12×1.11",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 320–480 mm",
+        "rangeMin": 320,
+        "rangeMax": 480
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  },
+  {
+    "cn": "WGSPFA-HS-5.6",
+    "S1": "普通",
+    "S2": 1,
+    "S5": "PFA",
+    "S7": "无",
+    "S23": "HS",
+    "S10": 2,
+    "S11": "碳钢",
+    "S4": "19×0.30",
+    "S6": 2.76,
+    "S8": "15×0.61",
+    "S9": "15×0.89",
+    "S12": 5.6,
+    "S13": "+0.13/-0.05",
+    "S14": 145.0,
+    "S15": 280.0,
+    "S16": 30.0,
+    "S18": "2.5 м/км/5кН",
+    "S19": 1200.0,
+    "S20": 15000.0,
+    "S21": 13.1,
+    "S22": 220.0,
+    "S3": 1.343,
+    "S17": 280,
+    "S24": null,
+    "S25": null,
+    "S26": null,
+    "S27": [
+      {
+        "index": 1,
+        "kind": "armor",
+        "structure": "15×0.61",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      },
+      {
+        "index": 2,
+        "kind": "armor",
+        "structure": "15×0.89",
+        "material": "碳钢",
+        "note": "projected from legacy S10/S11 fields"
+      }
+    ],
+    "_meta": {
+      "S1": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S2": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S3": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S4": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S5": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S6": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S7": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S8": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S9": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S10": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S11": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S12": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S13": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S14": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S15": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S16": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S18": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S19": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S20": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S21": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S22": {
+        "source": "direct",
+        "rule": null,
+        "inputs": [],
+        "confidence": null
+      },
+      "S23": {
+        "source": "parsed",
+        "rule": "PARSE-CN",
+        "inputs": [
+          "cn"
+        ],
+        "confidence": "A"
+      },
+      "S17": {
+        "source": "inferred",
+        "rule": "INF-10",
+        "inputs": [
+          "S12"
+        ],
+        "confidence": "B",
+        "note": "经验公式，建议范围 224–336 mm",
+        "rangeMin": 224,
+        "rangeMax": 336
+      },
+      "S27": {
+        "source": "inferred",
+        "rule": "LEGACY-S27",
+        "inputs": [
+          "S8",
+          "S9",
+          "S10",
+          "S11"
+        ],
+        "confidence": "B",
+        "note": "由旧版铠装字段投影生成"
+      }
+    }
+  }
+]

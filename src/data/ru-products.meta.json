@@ -1,0 +1,7 @@
+{
+  "promoted_at_utc": "2026-03-25T05:58:59.487159+00:00",
+  "current_rows_before_promote": 37,
+  "rows_after_promote": 141,
+  "backup_file": "C:\\Users\\G3187\\PycharmProjects\\HN-Mapper\\src\\data\\ru-products.seed.json",
+  "source_file": "C:\\Users\\G3187\\PycharmProjects\\HN-Mapper\\src\\data\\ru-products.staging.json"
+}
