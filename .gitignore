@@ -8,6 +8,7 @@ cn_cable_data/
 *.xlsx
 *.xls
 俄罗斯电缆材料.pdf
+wireline_cable_glossary(3).xlsx
 
 *.pyc
 .DS_Store

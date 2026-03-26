@@ -3,7 +3,7 @@ Apply high-confidence, name-derived fixes to RU source datasets.
 
 This script updates:
 - src/data/ru-products.json
-- ru_missing_partial.json
+- scripts/data/ru_missing_partial.json
 
 It only edits fields that are explicit in the model name or covered by
 project-level family conventions already used in the dataset:
@@ -20,9 +20,10 @@ from typing import Any
 
 
 BASE = Path(__file__).resolve().parents[1]
+SCRIPT_DATA = BASE / "scripts" / "data"
 RU_FILE = BASE / "src" / "data" / "ru-products.json"
-MISSING_FILE = BASE / "ru_missing_partial.json"
-MISSING_FIXED_FILE = BASE / "ru_missing_partial.fixed.json"
+MISSING_FILE = SCRIPT_DATA / "ru_missing_partial.json"
+MISSING_FIXED_FILE = SCRIPT_DATA / "ru_missing_partial.fixed.json"
 
 
 def load_json(path: Path) -> Any:

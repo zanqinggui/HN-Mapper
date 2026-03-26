@@ -3,7 +3,7 @@ Validate and merge RU cable data into a staging dataset.
 
 Inputs:
 - src/data/ru-products.json
-- ru_missing_partial.json
+- scripts/data/ru_missing_partial.json
 
 Outputs:
 - src/data/ru-products.staging.json
@@ -20,9 +20,10 @@ from typing import Any
 
 BASE = Path(__file__).resolve().parents[1]
 SRC_DATA = BASE / "src" / "data"
+SCRIPT_DATA = BASE / "scripts" / "data"
 RU_FILE = SRC_DATA / "ru-products.json"
-MISSING_FILE = BASE / "ru_missing_partial.json"
-MISSING_FIXED_FILE = BASE / "ru_missing_partial.fixed.json"
+MISSING_FILE = SCRIPT_DATA / "ru_missing_partial.json"
+MISSING_FIXED_FILE = SCRIPT_DATA / "ru_missing_partial.fixed.json"
 STAGING_FILE = SRC_DATA / "ru-products.staging.json"
 AUDIT_FILE = SRC_DATA / "ru-products.audit.json"
 SCHEMA_FILE = SRC_DATA / "s-schema.json"
